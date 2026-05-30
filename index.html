@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribeni Eye Hospital & Charitable Institute | Chandanpur, Puri, Odisha</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Tribeni Eye Hospital and Charitable Institute in Chandanpur, Puri offers premium and affordable eye care, cataract surgery, glaucoma treatment, and free eye camps under BSKY & PM-JAY. Book your consultation today.">
+    <meta name="keywords" content="Tribeni Eye Hospital, Triveni Eye Hospital, Eye Care Puri, Chandanpur Eye Hospital, Cataract Surgery Puri, BSKY Eye Hospital Puri, PMJAY Eye Hospital Odisha, Best Eye Doctor Puri">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/logo.jpg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Leaflet.js Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <a href="#home" class="logo-area">
+                <img src="assets/logo.jpg" alt="Tribeni Eye Hospital Logo" class="hospital-logo">
+                <div class="logo-text">
+                    <span class="brand-name">Tribeni Eye Hospital</span>
+                    <span class="brand-sub">& Charitable Institute</span>
+                </div>
+            </a>
+            
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#charity" class="nav-link">Charity</a></li>
+                    <li><a href="#gallery" class="nav-link">Media & Tour</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-cta">
+                <a href="#contact" class="btn btn-outline call-btn-header">
+                    <i class="fa-solid fa-phone"></i> +91 79786 36375
+                </a>
+                <button class="btn btn-primary" id="open-modal-btn">Book Appointment</button>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="trust-badge">
+                    <i class="fa-solid fa-circle-check"></i> PM-JAY & BSKY Empanelled Hospital
+                </div>
+                <h1>Restoring Clear Vision, <span class="gradient-text">Enriching Local Lives</span></h1>
+                <p class="hero-lead">Chandanpur's leading eye care center providing state-of-the-art diagnostics, premium micro-incision cataract surgeries, and comprehensive treatments with compassion.</p>
+                
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn btn-primary btn-large">Book Free Eye Consultation</a>
+                    <a href="#services" class="btn btn-secondary btn-large">Explore Services</a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15K+</span>
+                        <span class="stat-label">Happy Patients</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">5K+</span>
+                        <span class="stat-label">Successful Surgeries</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.7★</span>
+                        <span class="stat-label">Google/Justdial Rating</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image-wrapper">
+                <div class="main-hero-img-box">
+                    <img src="assets/hero_banner.png" alt="Triveni Eye Hospital Modern Lobby" class="hero-main-img">
+                    <div class="hero-floating-card card-1">
+                        <div class="icon-box green">
+                            <i class="fa-solid fa-hospital-user"></i>
+                        </div>
+                        <div class="card-details">
+                            <h4>24/7 Eye Emergency</h4>
+                            <p>Call: 73773 16366</p>
+                        </div>
+                    </div>
+                    <div class="hero-floating-card card-2">
+                        <div class="icon-box blue">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="card-details">
+                            <h4>100% Cashless</h4>
+                            <p>For BSKY & PM-JAY Cardholders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Strip -->
+    <section class="info-strip">
+        <div class="container info-strip-container">
+            <div class="strip-item">
+                <i class="fa-solid fa-clock"></i>
+                <div class="strip-text">
+                    <h4>OPD Timings</h4>
+                    <p>Mon - Sat: 9:00 AM - 6:00 PM | Sun: 9:00 AM - 1:00 PM</p>
+                </div>
+            </div>
+            <div class="strip-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="strip-text">
+                    <h4>Our Location</h4>
+                    <p>Plot No-104, Medical Chhaka, Chandanpur, Puri</p>
+                </div>
+            </div>
+            <div class="strip-item">
+                <i class="fa-solid fa-user-doctor"></i>
+                <div class="strip-text">
+                    <h4>Consulting Specialists</h4>
+                    <p>Expert Ophthalmologists & Surgeons</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container about-container">
+            <div class="about-image-box">
+                <img src="assets/eye_checkup.png" alt="Advanced Eye Checkup at Tribeni Eye Hospital" class="about-img">
+                <div class="experience-badge">
+                    <span class="exp-years">10+</span>
+                    <span class="exp-text">Years of Excellence</span>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <span class="section-tag">About Our Hospital</span>
+                <h2>Dedicated to Excellence in <span class="gradient-text">Eye Care & Vision</span></h2>
+                <p>Located in Chandanpur, Puri, Odisha, **Tribeni Eye Hospital and Charitable Institute** is a modern eye healthcare center committed to eliminating preventable blindness. We blend private medical expertise with charitable outreach, ensuring that premium eye treatments are accessible to everyone, regardless of economic background.</p>
+                <p>As an empanelled hospital under national and state health policies, we offer completely cashless treatments for underprivileged families. Our clinical team operates with state-of-the-art optical diagnostic tools and surgical setups to ensure safe, rapid, and painless recovery.</p>
+                
+                <div class="about-features">
+                    <div class="feature-bullet">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Micro-incision Phacoemulsification (Stitchless Cataract Surgery)</span>
+                    </div>
+                    <div class="feature-bullet">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Government Schemes Empanelled (PM-JAY, BSKY)</span>
+                    </div>
+                    <div class="feature-bullet">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Highly Advanced Autorefractometers & Diagnostic Scanners</span>
+                    </div>
+                    <div class="feature-bullet">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Charitable Vision Camps in Rural Puri Districts</span>
+                    </div>
+                </div>
+                
+                <div class="about-cta-row">
+                    <div class="director-info">
+                        <img src="assets/logo.jpg" alt="Tribeni Hospital Representative" class="director-avatar">
+                        <div>
+                            <h4>Tribeni Care Team</h4>
+                            <p>Hospital Administration</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-outline">Learn More About BSKY Cards</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Clinical Services</span>
+                <h2>Specialized Care For <span class="gradient-text">Your Vision</span></h2>
+                <p class="section-subtitle">We offer a full spectrum of diagnostic and surgical ophthalmology services using premium clinical technology.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1: Cataract -->
+                <div class="service-card">
+                    <div class="service-icon blue-bg">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3>Cataract & IOL Surgery</h3>
+                    <p>Advanced stitchless, painless phacoemulsification surgery with premium foldable intraocular lens (IOL) implants for crystal-clear vision.</p>
+                    <ul class="service-bullets">
+                        <li>Stitchless & Topical (No-Injection)</li>
+                        <li>Premium Monofocal & Multifocal Lenses</li>
+                        <li>Quick 15-minute Daycare Procedure</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2: Glaucoma -->
+                <div class="service-card">
+                    <div class="service-icon teal-bg">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3>Glaucoma Management</h3>
+                    <p>Early screening, intraocular pressure measurement, and customized medical therapy to halt irreversible optic nerve damage.</p>
+                    <ul class="service-bullets">
+                        <li>Goldmann Applanation Tonometry</li>
+                        <li>Computerized Visual Field Testing (Perimetry)</li>
+                        <li>Laser & Surgical pressure control</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3: Refractive Correction -->
+                <div class="service-card">
+                    <div class="service-icon green-bg">
+                        <i class="fa-solid fa-glasses"></i>
+                    </div>
+                    <h3>Refractive & Optical Shop</h3>
+                    <p>Precise computerized eye tests and a wide collection of stylish prescription frames, high-index lenses, and custom contact lenses.</p>
+                    <ul class="service-bullets">
+                        <li>Auto-Refractometer Vision Testing</li>
+                        <li>Bifocal, Progressive, & Blue-Cut Lenses</li>
+                        <li>Contact Lens fitting & training</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4: Retina & Diabetic Eye Care -->
+                <div class="service-card">
+                    <div class="service-icon purple-bg">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Retina & Diabetic Screening</h3>
+                    <p>Advanced screening for diabetic retinopathy, age-related macular degeneration (ARMD), and vitreous floaters using fundus scanners.</p>
+                    <ul class="service-bullets">
+                        <li>Digital Fundus Photography</li>
+                        <li>Diabetic Retinopathy Monitoring</li>
+                        <li>Hypertensive Retinopathy management</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5: Pediatric Ophthalmology -->
+                <div class="service-card">
+                    <div class="service-icon yellow-bg">
+                        <i class="fa-solid fa-child"></i>
+                    </div>
+                    <h3>Pediatric & Squint Care</h3>
+                    <p>Specialized vision screening, lazy eye (amblyopia) management, and corrective treatments tailored for children.</p>
+                    <ul class="service-bullets">
+                        <li>Child-friendly Vision Testing</li>
+                        <li>Amblyopia (Lazy Eye) Patching Therapy</li>
+                        <li>Squint & Binocular Vision exercises</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6: General Eye OPD & Pharmacy -->
+                <div class="service-card">
+                    <div class="service-icon orange-bg">
+                        <i class="fa-solid fa-prescription-bottle-medical"></i>
+                    </div>
+                    <h3>Pharmacy & Emergency Care</h3>
+                    <p>Fully stocked in-house pharmacy providing authentic ophthalmic drops, eye drops, ointments, and immediate care for eye traumas.</p>
+                    <ul class="service-bullets">
+                        <li>100% Genuine Eye Medications</li>
+                        <li>Eye Trauma & Chemical Burn Management</li>
+                        <li>Foreign Body Removal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Focus Section -->
+    <section class="tech-section">
+        <div class="container tech-container">
+            <div class="tech-content">
+                <span class="section-tag white-tag">Advanced Technology</span>
+                <h2>Painless, Stitchless, & <span class="gradient-text-light">Safe Operations</span></h2>
+                <p>Our commitment to clear vision means we continuously upgrade our medical arsenal. By utilizing digital topography, fundus imaging, and high-frequency ultrasound phaco emulsifiers, we offer surgeries that are highly precise and require zero overnight stay.</p>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <div class="tech-num">01</div>
+                        <div>
+                            <h4>Auto-Refractometer</h4>
+                            <p>Instant, computerized calculation of exact prescription values for refractive correction.</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-num">02</div>
+                        <div>
+                            <h4>Cold Phaco Machine</h4>
+                            <p>Ultrasonic surgical technology allowing cataract extraction with a micro incision of less than 2.8mm.</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-num">03</div>
+                        <div>
+                            <h4>Digital Slit Lamp</h4>
+                            <p>High-magnification microscopic examination of the anterior structure of the eye.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-image">
+                <img src="assets/eye_scan.png" alt="Advanced Eye Scanning Technology" class="tech-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Charity Section (The BSKY / PMJAY Focus) -->
+    <section class="charity-section" id="charity">
+        <div class="container charity-container">
+            <div class="charity-icon-block">
+                <div class="glow-circle">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+                <h3>Our Charitable Mission</h3>
+                <p>We believe that clear vision is a fundamental human right. Our institute works hand-in-hand with non-governmental agencies and state departments to identify, treat, and resolve visual impairments in rural Puri. Through free eye screening camps, mobile clinics, and subsidized cataract procedures, we have brought light to thousands of households.</p>
+                
+                <div class="scheme-logos">
+                    <div class="scheme-card">
+                        <i class="fa-solid fa-id-card"></i>
+                        <h4>Biju Swasthya Kalyan Yojana (BSKY)</h4>
+                        <p>Odisha state cards accepted for completely cashless treatment.</p>
+                    </div>
+                    <div class="scheme-card">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <h4>Ayushman Bharat (PM-JAY)</h4>
+                        <p>National cards accepted for cashless cataract surgeries.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="charity-video-block">
+                <span class="section-tag charity-tag">Patient Education Video</span>
+                <h2>Understanding Your Eyes</h2>
+                <p>Education is the first step to healthy vision. Watch this short animated guide to understand how your eyes work and the importance of regular clinical eye examinations.</p>
+                <div class="video-container">
+                    <!-- High-quality educational video from National Eye Institute or LEHN -->
+                    <iframe src="https://www.youtube.com/embed/wX1wG1rC1fU?rel=0&cc_load_policy=1" title="Eye Health Educational Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Hospital Gallery</span>
+                <h2>A Glimpse of <span class="gradient-text">Our Infrastructure</span></h2>
+                <p class="section-subtitle">Take a visual tour of our diagnostics labs, optical showroom, patient care wards, and operating theater.</p>
+            </div>
+            
+            <div class="gallery-filter-buttons">
+                <button class="gallery-filter-btn active" data-filter="all">All Photos</button>
+                <button class="gallery-filter-btn" data-filter="clinic">Lobby & OPD</button>
+                <button class="gallery-filter-btn" data-filter="tech">Technology</button>
+                <button class="gallery-filter-btn" data-filter="camp">Charity Camps</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Image 1 -->
+                <div class="gallery-item" data-category="clinic">
+                    <img src="assets/hero_banner.png" alt="Hospital Reception and Lobby">
+                    <div class="gallery-overlay">
+                        <h4>Reception & Lobby</h4>
+                        <p>Comfortable Patient Seating</p>
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="gallery-item" data-category="tech">
+                    <img src="assets/eye_scan.png" alt="Advanced Eye Diagnostic Scanner">
+                    <div class="gallery-overlay">
+                        <h4>Diagnostic Center</h4>
+                        <p>Precision Eye Scanning Systems</p>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="gallery-item" data-category="clinic">
+                    <img src="assets/eye_checkup.png" alt="Doctor Consultation Checkup">
+                    <div class="gallery-overlay">
+                        <h4>Consultation Room</h4>
+                        <p>Ophthalmologist Checkup Area</p>
+                    </div>
+                </div>
+                <!-- Image 4 -->
+                <div class="gallery-item" data-category="camp">
+                    <img src="assets/eye_checkup.png" alt="Rural Free Eye Screening Camp">
+                    <div class="gallery-overlay">
+                        <h4>Community Screening Camp</h4>
+                        <p>Free eye care for elderly rural citizens</p>
+                    </div>
+                </div>
+                <!-- Image 5 -->
+                <div class="gallery-item" data-category="tech">
+                    <img src="assets/eye_scan.png" alt="Autorefractometer System">
+                    <div class="gallery-overlay">
+                        <h4>Optical Testing Unit</h4>
+                        <p>Auto-Refractor for accurate glasses prescription</p>
+                    </div>
+                </div>
+                <!-- Image 6 -->
+                <div class="gallery-item" data-category="camp">
+                    <img src="assets/hero_banner.png" alt="Subsidized Surgical Admission Clinic">
+                    <div class="gallery-overlay">
+                        <h4>Daycare Ward</h4>
+                        <p>Clean daycare beds for recovery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Patient Stories</span>
+                <h2>What Our <span class="gradient-text">Patients Say</span></h2>
+                <p class="section-subtitle">Read feedback from residents of Chandanpur, Puri, and neighboring blocks who restored their vision with us.</p>
+            </div>
+            
+            <div class="testimonials-carousel" id="testimonials-container">
+                <div class="testimonial-card active">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"My grandmother had a dense cataract in both eyes. We came to Tribeni Eye Hospital and availed of the BSKY scheme. The surgery was completely cashless, fast, and painless. The staff is extremely well-behaved and the doctors are experts. Excellent service in Chandanpur!"</p>
+                    <div class="patient-details">
+                        <div class="patient-initial">R</div>
+                        <div>
+                            <h4>Ramesh Chandra Pradhan</h4>
+                            <p>Puri Town (Grandson of Patient)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"ଭଗବାନଙ୍କୁ କୋଟି କୋଟି ପ୍ରଣାମ ଓ ତ୍ରିବେଣୀ ଆଖି ହସ୍ପିଟାଲର ଡାକ୍ତରବାବୁ ମାନଙ୍କୁ ଧନ୍ୟବାଦ। ମୋର ମୋତିଆବିନ୍ଦୁ ଅପରେସନ ସଫଳ ହେଲା। ମୁଁ ଏବେ ସବୁ କିଛି ବହୁତ ସ୍ପଷ୍ଟ ଦେଖିପାରୁଛି। (Highly recommend this eye hospital for anyone looking for cataract surgery in Puri)."</p>
+                    <div class="patient-details">
+                        <div class="patient-initial">K</div>
+                        <div>
+                            <h4>Kanchanbala Devi</h4>
+                            <p>Chandanpur, Puri</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Very professional eye testing facility. Got my computerized eye test done and purchased blue-cut glasses from their optical shop. Price is highly reasonable and quality is superior to city showrooms. Staff behaves politely."</p>
+                    <div class="patient-details">
+                        <div class="patient-initial">S</div>
+                        <div>
+                            <h4>Satyajit Mohanty</h4>
+                            <p>Sakhigopal, Puri</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-container">
+            <div class="contact-details-box">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Contact or Visit <span class="gradient-text">Our Hospital</span></h2>
+                <p>We are conveniently located at Medical Chhaka, Chandanpur on the main Puri-Bhubaneswar highway. Feel free to call us for details on appointment booking, emergency support, or health scheme card eligibility.</p>
+                
+                <div class="contact-methods">
+                    <a href="tel:7978636375" class="contact-method-card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Call Primary Desk</h4>
+                            <p>+91 79786 36375</p>
+                        </div>
+                    </a>
+                    
+                    <a href="tel:7377316366" class="contact-method-card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <div>
+                            <h4>Emergency Hotline</h4>
+                            <p>+91 73773 16366</p>
+                        </div>
+                    </a>
+                    
+                    <div class="contact-method-card">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4>Our Address</h4>
+                            <p>Plot No-104, Medical Chhaka, Chandanpur, Puri, Odisha (Pin: 752012)</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://www.facebook.com/profile.php?id=61564453636216" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+                        <div class="icon-box fb-blue">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div>
+                            <h4>Facebook Page</h4>
+                            <p>fb.com/Tribeni-Eye-Hospital</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-form-box">
+                <h3>Quick Consultation Request</h3>
+                <p>Fill out the form below and our care desk will contact you within 24 hours to schedule your eye checkup.</p>
+                
+                <form id="appointment-form" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Patient Name *</label>
+                            <input type="text" id="name" required placeholder="Enter full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" required placeholder="10-digit mobile number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service-select">Eye Service Needed</label>
+                            <select id="service-select">
+                                <option value="cataract">Cataract Surgery</option>
+                                <option value="examination" selected>General Eye Examination</option>
+                                <option value="refraction">Glasses / Vision Test</option>
+                                <option value="glaucoma">Glaucoma Screening</option>
+                                <option value="pediatric">Child Eye Care</option>
+                                <option value="camp">Charitable BSKY Scheme Details</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Describe Symptoms / Message</label>
+                        <textarea id="message" rows="3" placeholder="Explain your eye problems briefly..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full-width">Submit Booking Request</button>
+                    <div id="form-success-msg" class="success-message-box" style="display: none;">
+                        <i class="fa-solid fa-circle-check"></i> Booking request submitted! Our coordinator will call you soon.
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Interactive Leaflet Map Container -->
+        <div class="map-section">
+            <div class="container">
+                <h4 class="map-title"><i class="fa-solid fa-map-location-dot"></i> Interactive Map: Locate Us at Medical Chhaka, Chandanpur</h4>
+            </div>
+            <div id="hospital-map" class="hospital-map-container"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-column">
+                <div class="footer-logo">
+                    <img src="assets/logo.jpg" alt="Tribeni Eye Hospital Logo" class="hospital-logo">
+                    <div>
+                        <h4>Tribeni Eye Hospital</h4>
+                        <p>& Charitable Institute</p>
+                    </div>
+                </div>
+                <p class="footer-desc">Providing premium, patient-centric eye diagnostic and micro-surgery treatments. Fully empanelled under Ayushman Bharat (PM-JAY) and BSKY government health card schemes.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/profile.php?id=61564453636216" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Clinical Services</a></li>
+                    <li><a href="#charity">Charitable Initiatives</a></li>
+                    <li><a href="#gallery">Media Gallery</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links-column">
+                <h4>Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#services">Cataract Phaco Surgery</a></li>
+                    <li><a href="#services">Computerized Eye Testing</a></li>
+                    <li><a href="#services">Glaucoma Diagnostics</a></li>
+                    <li><a href="#services">Diabetic Retina Care</a></li>
+                    <li><a href="#services">Pediatric Eye Treatment</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-info-column">
+                <h4>Contact Details</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Plot No-104, Medical Chhaka, Chandanpur, Puri, Odisha (Pin: 752012)</p>
+                <p><i class="fa-solid fa-phone"></i> +91 79786 36375</p>
+                <p><i class="fa-solid fa-phone"></i> +91 73773 16366</p>
+                <p><i class="fa-solid fa-envelope"></i> info@tribenieyehospital.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Tribeni Eye Hospital and Charitable Institute. All Rights Reserved.</p>
+                <p>Designed with ❤️ for Chandanpur and Puri Vision Care. Empanelled with PM-JAY & BSKY.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal Dialog -->
+    <div class="modal-overlay" id="booking-modal">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="close-modal-btn">&times;</button>
+            <div class="modal-header">
+                <i class="fa-solid fa-calendar-check"></i>
+                <div>
+                    <h3>Schedule an Appointment</h3>
+                    <p>Enter details below to reserve your clinical checkup</p>
+                </div>
+            </div>
+            <form id="modal-appointment-form" class="modal-form">
+                <div class="form-group">
+                    <label for="modal-name">Patient Full Name *</label>
+                    <input type="text" id="modal-name" required placeholder="E.g. Ramesh Kumar Sahu">
+                </div>
+                <div class="form-group">
+                    <label for="modal-phone">Phone Number *</label>
+                    <input type="tel" id="modal-phone" required placeholder="10-digit mobile number">
+                </div>
+                <div class="form-group">
+                    <label for="modal-service">Required Ophthalmic Service</label>
+                    <select id="modal-service">
+                        <option value="cataract">Cataract Phaco Operation</option>
+                        <option value="examination" selected>General Eye OPD Consultation</option>
+                        <option value="glasses">Vision Correction (Spectacles)</option>
+                        <option value="glaucoma">Glaucoma Diagnostic screening</option>
+                        <option value="scheme">BSKY/PMJAY Cashless Inquiry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modal-date">Appointment Date</label>
+                    <input type="date" id="modal-date">
+                </div>
+                <div class="form-group">
+                    <label for="modal-message">Any specific complaints or questions?</label>
+                    <textarea id="modal-message" rows="2" placeholder="Mention blurred vision, itching, double vision etc."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full-width">Confirm Booking</button>
+                <div id="modal-success-msg" class="success-message-box" style="display: none;">
+                    <i class="fa-solid fa-circle-check"></i> Success! We will call you within 2 hours.
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Leaflet.js Map Library JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Script Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
